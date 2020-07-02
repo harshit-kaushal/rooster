@@ -1,0 +1,47 @@
+<html>
+    <head><title>Staff</title>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="/javascripts/code.js" defer></script>
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+        <meta name="google-signin-client_id" content="268702507862-shs30eanp0pascoccsv2lnnaclo4nj9b.apps.googleusercontent.com">
+    </head>
+    <body onload="loadstaff()">
+        <header>
+             <div class="wrapper">
+                <div class="logo">
+                    <a href="dash.html">
+                        <img src="/images/logo.png" alt="website logo">
+                    </a>
+                </div>
+
+                <br>
+                <button class="dash-btn" onclick="logout()">Log Out</button>
+                <button class="dash-btn"><a href=/users/manager/profile.html>Profile</button>
+                <button class="dash-btn"><a href="/users/manager/shift.html">Shifts</a> </button>
+                <button class="dash-btn"><a href="/users/manager/roles.html">Roles</a></button>
+                <button class="dash-btn"><a href="/users/manager/staff.html">Staff</a></button>
+                <button class="dash-btn"><a href="/users/manager/dash.html">Dashboard</a></button>
+            </div>
+        </header>
+
+        <form class="addstaff">
+            <input type="text" id="fname" placeholder="First Name" required>
+            <input type="text" id="lname" placeholder="Last Name" required>
+            <input type="email" id="mail" placeholder="Email ID" required>
+            <input type="email" id="phone" placeholder="Phone" required>
+            <input type="email" id="pos" placeholder="Position" required>
+            <button type="button" onclick="addstaff()">Add Staff</button>
+        </form>
+
+        <table id="staff" class="current-staff">
+            <caption>Current Staff</caption>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Roles</th>
+            </tr>
+        </table>
+    </body>
+</html>

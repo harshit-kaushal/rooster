@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Rooster</title>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="/javascripts/code.js" defer></script>
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+        <meta name="google-signin-client_id" content="268702507862-shs30eanp0pascoccsv2lnnaclo4nj9b.apps.googleusercontent.com">
+    </head>
+
+    <body>
+        <div id="vuemain">
+            <header>
+                <div class="wrapper">
+                    <div class="logo">
+                        <img src="/images/logo.png" alt="website logo">
+                    </div>
+                    <br>
+                    <button class="login-reg" onclick="logsequence()">Login/Register</button>
+                </div>
+            </header>
+
+            <div class="rooster-main" id="rooster">
+                <h1>Rooster</h1>
+                Making sure you're on time
+            </div>
+
+            <div class="wrap">
+                <div class="loginbox">
+                    <div class="buttonbox">
+                        <div id="btn">
+
+                        </div>
+                            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                    </div>
+
+                    <form class="input" id="login">
+                        <div id="my-signin2"></div>
+                        <input type="text" class="input-field" id="loginuser" placeholder="Email ID" required>
+                        <input type="password" class="input-field" id="loginpass" placeholder="Password" required>
+                        <input type="checkbox" class="checkbox"><span>Remember Me</span>
+                        <button type="button" onclick="loginbtn()" class="submit-btn">Login</button>
+                    </form>
+
+
+                    <form class="input" id="register">
+                        <input type="text" id="fname-reg" class="input-field" placeholder="First Name" required>
+                        <input type="text" id="lname-reg" class="input-field" placeholder="Last Name" required>
+                        <input type="email" id="mail-reg" class="input-field" placeholder="Email ID" required>
+                        <input type="text" id="phone-reg" class="input-field" placeholder="Phone" required>
+                        <input type="password" id="pass-reg" class="input-field" placeholder="Password" required>
+                        <input type="checkbox" class="checkbox"><span>I accept the <a id="terms" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">terms & conditions</a></span>
+                        <button type="button" onclick="regbtn()" class="submit-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

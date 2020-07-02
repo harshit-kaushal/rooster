@@ -1,0 +1,38 @@
+<html>
+     <head>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="/javascripts/code.js" defer></script>
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+        <meta name="google-signin-client_id" content="268702507862-shs30eanp0pascoccsv2lnnaclo4nj9b.apps.googleusercontent.com">
+        <title>Profile</title>
+    </head>
+      <body onload="loadprofile()">
+        <header>
+             <div class="wrapper">
+                <div class="logo">
+                        <img src="/images/logo.png" alt="website logo">
+                </div>
+
+                <br>
+
+                <button class="dash-btn" onclick="logout()">Log Out</button>
+                <button class="dash-btn"><a href=/users/staff_profile.html>Profile</button>
+                <button class="dash-btn"><a href="/users/staff_dash.html">Dashboard</a></button>
+            </div>
+        </header>
+
+        <div class="prof-head">
+            <h2 >Staff Profile:</h2>
+        </div>
+
+        <ul class="user-deets">
+            <li>First Name:<input id="fname" placeholder="test"></input></li>
+            <li>Last Name:<input id="lname" placeholder="test"></input></li>
+            <li>Email-ID:<input id="email" placeholder="test"></input></li>
+            <li>Phone:<input id="phone" placeholder="test"></input></li>
+            <li>Password:<input id="pass" placeholder="Password" type="password"></input></li>
+            <button type="button" onclick="updateprof()">Update Details</button>
+        </ul>
+     </body>
+</html>
